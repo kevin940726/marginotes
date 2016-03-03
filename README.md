@@ -5,6 +5,13 @@ Quick, cool margin notes with jQuery
 
 ### Usage
 
+Marginotes works 
+
 ```javascript
-$("anyparagraphselector").marginotes()
+$("anyparagraphselector").marginotes(options)
 ```
+
+### Options
+
+*width*: sets the tooltip's width. Default is 100px.
+*field*: sets the html attribute to look for. Default is `desc`
