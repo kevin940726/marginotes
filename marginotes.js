@@ -1,11 +1,13 @@
 var marginotes = function (element, options) {
+  var options = options || {}
   $('body').append('<div class = "margintooltip" style = "display:none;"></div>')
-	this.hover(function (e) {
-    var description = $(this).attr("desc")
+  var field = options.field || "desc"
+  this.hover(function (e) {
+    var description = $(this).attr(field)
     var parent = $(this.parentElement)
     var position = parent.position()
     var tooltip = $('.margintooltip')
-    var width = Math.min(100, position.left)
+    var width = Math.min(options.width || 100, position.left)
     if (width < 60 || !description) return;
     var tooltipStyle = {
       "position": "absolute",
