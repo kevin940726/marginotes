@@ -5,10 +5,14 @@ Marginotes takes your jQuery selection and adds notes to the margin with the tex
 
 Marginotes works by adding a `desc` attribute to an HTML element, which will be displayed as a tooltip:
 
+```html
+<a href="https://www.gatesnotes.com/" desc="Original, right?">Bill Gates</a>
+```
+
 ![marginotes](https://cloud.githubusercontent.com/assets/3707222/13412271/5434e920-df42-11e5-8c53-c1a4aa25663d.gif)
 
 ```javascript
-$("anyparagraphselector").marginotes(options)
+$("selector").marginotes(options)
 ```
 
 It works with links, as well as with `<span>` elements:
