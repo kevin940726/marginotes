@@ -1,5 +1,5 @@
 # marginotes
-Marginotes takes your jQuery selection and adds notes to the margin with the text provided in HTML attributes.
+Marginotes takes your jQuery selection and adds notes to the margin with the text provided in HTML attributes. You can see it working live at [my website](http://francisco.dance)
 
 ### Usage
 
