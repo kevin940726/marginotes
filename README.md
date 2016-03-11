@@ -1,31 +1,38 @@
-# marginotes
-Marginotes takes your jQuery selection and adds notes to the margin with the text provided in HTML attributes. You can see it working live at [my website](http://francisco.dance). If you don't want to use jQuery, there's also a [version of marginotes](https://github.com/mshenfield/vanilla-marginotes) without it.
+# react-marginotes
+Originally forked and inspired from [fdansv/marginotes](https://github.com/fdansv/marginotes). Use it within react.
 
 ### Usage
 
-Marginotes works by adding a `desc` attribute to an HTML element, which will be displayed as a tooltip:
+react-marginotes is a higher-order component. Wrap it into another component you like:
 
-```html
-<a href="https://www.gatesnotes.com/" desc="Original, right?">Bill Gates</a>
+```js
+import Marginotes from 'react-marginotes';
+
+let Link = ({ children, href="#" }) => (
+    <a href={href}>{children}</a>
+);
+Link = Marginotes(Link);
+
+let Span = ({ children }) => (
+    <span style={{color: "blue"}}>{children}</span>
+);
+Span = Marginotes(Span);
+```
+
+Then use it like before but adding a `desc` attribute:
+
+```js
+<Link desc="...">...</Link>
+<Span desc="..."></Span>
+<Link href="#" desc="...">...</Link> // other attributes works as well.
 ```
 
 ![marginotes](https://cloud.githubusercontent.com/assets/3707222/13412271/5434e920-df42-11e5-8c53-c1a4aa25663d.gif)
 
-```javascript
-$("selector").marginotes(options)
+### Attributes
+
+`width`: sets the tooltip's width. Default is 100px.
+
+```js
+<Link width={120} desc="...">...</Link>
 ```
-
-It works with links, as well as with `<span>` elements:
-
-```html
-<span desc = "The rainiest place in Europe. Probably. Maybe.">Brión</span>
-```
-
-![marginotes](https://cloud.githubusercontent.com/assets/3707222/13556633/11447bde-e3df-11e5-8cc7-1d1f1ca9ac34.gif)
-
-
-### Options
-
-*width*: sets the tooltip's width. Default is 100px.
-
-*field*: sets the html attribute to look for. Default is `desc`
