@@ -1,6 +1,6 @@
 {
   "name": "react-marginotes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick, cool margin notes in React",
   "main": "dist/bundle.js",
   "dependencies": {},
