@@ -1,8 +1,10 @@
+var webpack = require("webpack");
+
 module.exports = {
-    entry: ['./app.js'],
+    entry: ['./react-marginotes.js'],
     output: {
-        publicPath: '/',
-        filename: 'bundle.js'
+        publicPath: '/dist/',
+        filename: 'dist/bundle.js'
     },
     devtool: 'eval',
     module: {
@@ -13,5 +15,10 @@ module.exports = {
                 loaders: ['babel?presets[]=react,presets[]=es2015']
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        })
+    ]
 };
