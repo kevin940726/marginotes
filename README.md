@@ -1,6 +1,8 @@
 # react-marginotes
 Originally forked and inspired from [fdansv/marginotes](https://github.com/fdansv/marginotes). Use it within react. See the [live demo](https://kevin940726.github.io/react-marginotes).
 
+![marginotes](https://cloud.githubusercontent.com/assets/3707222/13412271/5434e920-df42-11e5-8c53-c1a4aa25663d.gif)
+
 ### Install
 via `npm`:
 ```
@@ -32,8 +34,6 @@ Then use it like before but adding a `desc` attribute:
 <Span desc="..."></Span>
 <Link href="#" desc="...">...</Link> // other attributes works as well.
 ```
-
-![marginotes](https://cloud.githubusercontent.com/assets/3707222/13412271/5434e920-df42-11e5-8c53-c1a4aa25663d.gif)
 
 ### Attributes
 
