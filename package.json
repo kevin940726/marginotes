@@ -2,7 +2,7 @@
   "name": "react-marginotes",
   "version": "1.0.0",
   "description": "Quick, cool margin notes in React",
-  "main": "react-marginotes.js",
+  "main": "dist/react-marginotes.js",
   "dependencies": {},
   "devDependencies": {
     "webpack": "^1.12.14"
