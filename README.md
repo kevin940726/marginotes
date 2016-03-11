@@ -1,6 +1,12 @@
 # react-marginotes
 Originally forked and inspired from [fdansv/marginotes](https://github.com/fdansv/marginotes). Use it within react. See the [live demo](https://kevin940726.github.io/react-marginotes).
 
+### Install
+via `npm`:
+```
+npm i --save react-marginotes
+```
+
 ### Usage
 
 react-marginotes is a higher-order component. Wrap it into another component you like:
